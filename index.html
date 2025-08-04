@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WIFI </title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+    #qrcode {
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>WIFI </h2>
+  <div id="qrcode"></div>
+
+  <script>
+    // Replace this with your actual image URL
+    const imageUrl = "https://media1.tenor.com/m/EuRL4e1BvGUAAAAd/malupiton-bossing-boss-dila.gif";
+
+    // Generate QR code
+    new QRCode(document.getElementById("qrcode"), {
+      text: imageUrl,
+      width: 200,
+      height: 200
+    });
+  </script>
+
+</body>
+</html>
